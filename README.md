@@ -16,3 +16,29 @@ Cloud Run brings "serverless" development to containers and can be run either on
 (4) roll out new version of Website without Downtime (CI/CD)
 
 -----------
+
+# Cloud Build
+
+from Step 1
+
+> all about Docker Image 
+
+* 1.1, use Cloud Build to create docker Image
+
+* 1.2, pull it to gcr.io
+
+# Cloud Run
+
+from step 2
+
+> Deploy a Container
+
+* 2.1, pull it to Cloud Run PaaS
+
+* 2.2, mgmt the Deployment
+
+* 2.3, setup Endpoint for App in Cloud Run
+
+# Ref Code
+
+10445
