@@ -108,7 +108,7 @@ from step 3
 
       gcloud services enable cloudbuild.googleapis.com
 
-* 2.3, use Cloud Build to create container.
+* 2.3, use Cloud Build to create container, and push it to container registry.
 
       gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/monolith:1.0.0 .
         
