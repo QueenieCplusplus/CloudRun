@@ -9,7 +9,7 @@ Cloud Run brings "serverless" development to containers and can be run either on
 
 (1) create a Docker Image for App
 
-(2) use Cloud Build to create Docker Image for App (as same as step 1)
+(2) move the Image to Cloud Storage Bucket for Cloud Build.
 
 (3) deploy/pull the container image to CloudRun
 
@@ -102,10 +102,20 @@ from step 3
 
 > Dockerize App use Cloud Build
 
-* 2.1, in cloud shell, use Cloud Build to create docker Image
+* 2.1, in cloud shell, compress and move docker file to Cloud Sorage Bucket. 
 
+* 2.2, enable google cloud api called cloudbuild
+
+      gcloud services enable cloudbuild.googleapis.com
+
+* 2.3, use Cloud Build to create container.
+
+      gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/monolith:1.0.0 .
         
-* 2.2, push it to gcr.io (a private registry)
+      [output]
+      -----------------------------------------------------------------------------------------------------    ------------------------------------------------------------------------------------------------------
+       ID                                    CREATE_TIME                DURATION  SOURCE                                                                                  IMAGES                              STATUS
+       1ae295d9-63cb-482c-959b-bc52e9644d53  2019-08-29T01:56:35+00:00  33S       gs://<PROJECT_ID>_cloudbuild/source/1567043793.94-abfd382011724422bf49af1558b894aa.tgz  gcr.io/<PROJECT_ID>/monolith:1.0.0  SUCCESS
 
 
 # Cloud Run
