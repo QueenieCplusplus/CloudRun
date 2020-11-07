@@ -13,7 +13,7 @@ Cloud Run brings "serverless" development to containers and can be run either on
 
 (3) deploy/pull the container image to CloudRun
 
-(4) update Website, and roll out new version of Website without Downtime (CI/CD)
+(4) update Website -> rebuid -> push again with new tag, and roll out new version of Website without Downtime (CI/CD)
 
 (5) GKE
 
@@ -187,6 +187,8 @@ prework,
       
       npm run build:monolith 
       // copy it to monolith dir
+      
+* 4.1 rebuild the Docker container and publish it to Container Registry. You can use the same command as before, except this time you will update the version label.
 
 
 # GKE
