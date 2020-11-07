@@ -39,6 +39,10 @@ from Step 1
       [output]
       
       Monolith listening on port 8080!
+      
+      [output in UI]
+      
+     ![](https://raw.githubusercontent.com/QueenieCplusplus/CloudRun/main/web%20preview.png)
 
 * 1.1, use Cloud Build to create docker Image
 
