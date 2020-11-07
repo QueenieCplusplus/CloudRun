@@ -9,11 +9,11 @@ Cloud Run brings "serverless" development to containers and can be run either on
 
 (1) create a Docker Image for App
 
-(2) deploy/pull the container image to CloudRun
+(2) use Cloud Build to create Docker Image for App (as same as step 1)
 
-(3) update Website
+(3) deploy/pull the container image to CloudRun
 
-(4) roll out new version of Website without Downtime (CI/CD)
+(4) update Website, and roll out new version of Website without Downtime (CI/CD)
 
 (5) GKE
 
@@ -48,12 +48,11 @@ from Step 0
 
        pressing CTRL+C in Cloud Shell.
        
-       
-# Cloud Build
+# Docker 
 
-> Dockerize App
+> Dockerize App use Docker cmd line
 
-* 1.1, in cloud shell, use Cloud Build to create docker Image
+* 1.1, in cloud shell, log in Docker
 
        sudo usermod -a -G docker ${USER}
        
@@ -62,25 +61,43 @@ from Step 0
        // Caution: The docker group is equivalent to the root user. See Docker's documentation for details on how this affects the security of your system.
        
        // Log out and log back in for group membership changes to take effect. If you are using a virtual machine, you may need to restart the virtual machine for membership changes to take effect.
+ 
+* 1.2, test Docker run within output of Date
+
+       docker run busybox date
+       
+# Cloud Build
+
+from step 3
+
+> Dockerize App use Cloud Build
+
+* 2.1, in cloud shell, use Cloud Build to create docker Image
 
         
-* 1.2, push it to gcr.io (a private registry)
+* 2.2, push it to gcr.io (a private registry)
 
 
 # Cloud Run
 
-from step 2
+from step 3
 
 > Deploy a Container
 
-* 2.1, pull it to Cloud Run PaaS
+* 3.1, pull it to Cloud Run PaaS
 
-* 2.2, mgmt the Deployment
+* 3.2, mgmt the Deployment
 
-* 2.3, setup Endpoint for App in Cloud Run
+* 3.3, setup Endpoint for App in Cloud Run
+
+# CI/CD
+
+from step 4
 
 
 # GKE
+
+from step 5
 
 since the docker image is saved in the private registry, GKE can pull from it to do GKE-style deployment.
 
