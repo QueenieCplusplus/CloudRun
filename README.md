@@ -21,9 +21,19 @@ Cloud Run brings "serverless" development to containers and can be run either on
 
 from Step 1
 
-> all about Docker Image 
+> all about Docker Image
+
+* prework, clone a existing website code from Github
+
+       git clone https://github.com/googlecodelabs/monolith-to-microservices.git
+       
+       cd monolith-to-microservices
+       
+       cd ./setup.sh
 
 * 1.1, use Cloud Build to create docker Image
+
+        
 
 * 1.2, pull it to gcr.io
 
