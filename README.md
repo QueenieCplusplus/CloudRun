@@ -136,7 +136,11 @@ from step 3
 
        gcloud run deploy --image=gcr.io/${GOOGLE_CLOUD_PROJECT}/monolith:1.0.0 --platform managed
        
-       // choose the managed version of Cloud Run by specifying --platform managed.
+       // 1. choose the managed version of Cloud Run by specifying --platform managed.
+       
+       // 2. specify which region you'd like to run in. Type the number for the region closest to you.
+       
+       // 3. accept the default suggested service name (it will be "monolith") by pressing Enter.
 
 * 3.3, mgmt the Deployment
 
