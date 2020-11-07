@@ -91,6 +91,10 @@ from Step 0
      gcloud container images delete gcr.io/PROJECT_ID/quickstart-image:tag1 --force-delete-tags
      
      // in project id includes : colons symbol, then check out the doc https://cloud.google.com/container-registry/docs/overview#domain-scoped_projects
+     
+* 1.8, sum up doc
+
+    https://cloud.google.com/container-registry/docs/quickstart
        
 # Cloud Build
 
