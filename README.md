@@ -156,8 +156,16 @@ from step 3
       ✔  monolith  us-east1 <your url>  <your email>             [time]
 
 * 3.5, setup Endpoint for App in Cloud Run
+        
+        gcloud run deploy --image=gcr.io/${GOOGLE_CLOUD_PROJECT}/monolith:1.0.0 --platform managed --concurrency 1
+        
+        // change the concurrency val as 1
+        
+* tips & attentions:
 
-# CI/CD
+By default, a Cloud Run application will have a concurrency value of 80, meaning that each container instance will serve up to 80 requests at a time. This is a big departure from the Functions-as-a-Service model, where one instance handles one request at a time.
+
+# CI/CD, Revision
 
 from step 4
 
