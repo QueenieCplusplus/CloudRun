@@ -53,10 +53,17 @@ from Step 0
 
 > Dockerize App
 
-* 1.1, use Cloud Build to create docker Image
+* 1.1, in cloud shell, use Cloud Build to create docker Image
+
+       sudo usermod -a -G docker ${USER}
+       
+       //If you're using a Linux-based operating system, such as Ubuntu or Debian, add your username to the docker group so that you can run Docker without using sudo.
+       
+       // Caution: The docker group is equivalent to the root user. See Docker's documentation for details on how this affects the security of your system.
+       
+       // Log out and log back in for group membership changes to take effect. If you are using a virtual machine, you may need to restart the virtual machine for membership changes to take effect.
 
         
-
 * 1.2, push it to gcr.io (a private registry)
 
 
