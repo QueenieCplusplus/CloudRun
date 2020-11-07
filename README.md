@@ -17,6 +17,18 @@ Cloud Run brings "serverless" development to containers and can be run either on
 
 (5) GKE
 
+# Core Cmd Line
+
+     gcloud auth configure-docker
+
+     gcloud services enable []
+     
+     gcloud builds submit --image=[] --plateform managed
+     
+     gcloud run deploy --image=[] --plateform managed
+     
+     ctrl+c
+
 -----------
 
 # Nodejs Web Server
