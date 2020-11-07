@@ -116,6 +116,10 @@ from step 3
       -----------------------------------------------------------------------------------------------------    ------------------------------------------------------------------------------------------------------
        ID                                    CREATE_TIME                DURATION  SOURCE                                                                                  IMAGES                              STATUS
        1ae295d9-63cb-482c-959b-bc52e9644d53  2019-08-29T01:56:35+00:00  33S       gs://<PROJECT_ID>_cloudbuild/source/1567043793.94-abfd382011724422bf49af1558b894aa.tgz  gcr.io/<PROJECT_ID>/monolith:1.0.0  SUCCESS
+       
+* 2.4, in cloud concole, navigation bar > Cloud Build > history
+    
+    ![](https://raw.githubusercontent.com/QueenieCplusplus/CloudRun/main/cloud%20built%20history.png)
 
 
 # Cloud Run
