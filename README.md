@@ -197,6 +197,9 @@ prework,
        gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/monolith:2.0.0 .
        // with new version name this time
 
+* 4.2, deploy the new version of service.
+
+       gcloud run deploy --image=gcr.io/${GOOGLE_CLOUD_PROJECT}/monolith:2.0.0 --platform managed
 
 # GKE
 
