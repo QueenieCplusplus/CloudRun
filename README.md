@@ -182,6 +182,11 @@ prework,
       mv index.js.new index.js
       
       cat ~/monolith-to-microservices/react-app/src/pages/Home/index.js
+      
+      cd ~/monolith-to-microservices/react-app
+      
+      npm run build:monolith 
+      // copy it to monolith dir
 
 
 # GKE
