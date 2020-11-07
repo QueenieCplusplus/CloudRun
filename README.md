@@ -13,7 +13,7 @@ Cloud Run brings "serverless" development to containers and can be run either on
 
 (3) deploy/pull the container image to CloudRun
 
-(4) update Website -> rebuid -> push again with new tag, and roll out new version of Website without Downtime (CI/CD)
+(4) update Website -> rebuild -> push again with new tag, and roll out new version of Website without Downtime (CI/CD)
 
 (5) GKE
 
