@@ -144,9 +144,11 @@ from step 3
        
        // 3. accept the default suggested service name (it will be "monolith") by pressing Enter.
        
-* 3.4, check the deployment
+* 3.4, check the deployment 
 
        gcloud run services list
+       
+       Type "1" to choose the first option: [1] Cloud Run (fully managed)
        
        [the pod is running now]
        
