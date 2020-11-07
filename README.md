@@ -43,6 +43,10 @@ from Step 1
       [output in UI]
       
      ![](https://raw.githubusercontent.com/QueenieCplusplus/CloudRun/main/web%20preview.png)
+     
+* prework-3, stop the Web server
+
+       pressing CTRL+C in Cloud Shell.
 
 * 1.1, use Cloud Build to create docker Image
 
