@@ -161,6 +161,10 @@ from step 3
         
         // change the concurrency val as 1
         
+* 3.6, in cloud console, check the result by navigating to Cloud Run > [Service Name] > revsion tab.
+
+    
+        
 * tips & attentions:
 
 By default, a Cloud Run application will have a concurrency value of 80, meaning that each container instance will serve up to 80 requests at a time. This is a big departure from the Functions-as-a-Service model, where one instance handles one request at a time.
