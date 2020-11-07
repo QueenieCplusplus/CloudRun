@@ -190,6 +190,13 @@ prework,
       
 * 4.1 rebuild the Docker container and publish it to Container Registry. You can use the same command as before, except this time you will update the version label.
 
+       cd ~/monolith-to-microservices/monolith
+       
+       npm start // feel free to do this execution
+       
+       gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/monolith:2.0.0 .
+       // with new version name this time
+
 
 # GKE
 
