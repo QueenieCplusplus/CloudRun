@@ -17,11 +17,9 @@ Cloud Run brings "serverless" development to containers and can be run either on
 
 -----------
 
-# Cloud Build
+# Nodejs Web Server
 
-from Step 1
-
-> all about Docker Image
+from Step 0
 
 * prework-1, clone a existing website code from Github
 
@@ -47,6 +45,11 @@ from Step 1
 * prework-3, stop the Web server
 
        pressing CTRL+C in Cloud Shell.
+       
+       
+# Cloud Build
+
+> Dockerize App
 
 * 1.1, use Cloud Build to create docker Image
 
