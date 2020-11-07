@@ -23,13 +23,18 @@ from Step 1
 
 > all about Docker Image
 
-* prework, clone a existing website code from Github
+* prework-1, clone a existing website code from Github
 
        git clone https://github.com/googlecodelabs/monolith-to-microservices.git
        
        cd monolith-to-microservices
        
        cd ./setup.sh
+       
+* prework-2, test app by starting the web server
+
+      cd ~/monolith-to-microservices/monolith
+      npm start
 
 * 1.1, use Cloud Build to create docker Image
 
