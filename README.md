@@ -73,6 +73,24 @@ from Step 0
 * 1.4, pull the docker image to repo
 
       docker pull gcr.io/google-samples/hello-app:1.0
+      
+* 1.5, tag the docker image and push it to repo
+
+      docker tag gcr.io/google-samples/hello-app:1.0 gcr.io/PROJECT_ID/[tag name]
+
+      docker tag gcr.io/google-samples/hello-app:1.0 gcr.io/PROJECT_ID/quickstart-image:tag1
+      
+      docker push gcr.io/PROJECT_ID/quickstart-image:tag1
+      
+* 1.6, on contrast, we pull back the app from remote to local.
+
+      docker pull gcr.io/PROJECT_ID/quickstart-image:tag1
+      
+* 1.7, delete docker image in repo
+
+     gcloud container images delete gcr.io/PROJECT_ID/quickstart-image:tag1 --force-delete-tags
+     
+     // in project id includes : colons symbol, then check out the doc https://cloud.google.com/container-registry/docs/overview#domain-scoped_projects
        
 # Cloud Build
 
