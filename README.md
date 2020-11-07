@@ -66,6 +66,14 @@ from Step 0
 
        docker run busybox date
        
+* 1.3, log in the repo
+
+       gcloud auth configure-docker
+       
+* 1.4, pull the docker image to repo
+
+      docker pull gcr.io/google-samples/hello-app:1.0
+       
 # Cloud Build
 
 from step 3
