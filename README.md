@@ -77,6 +77,8 @@ from step 2
 
 since the docker image is saved in the private registry, GKE can pull from it to do GKE-style deployment.
 
+see https://github.com/QueenieCplusplus/GKE
+
 # Ref Code
 
 10445
