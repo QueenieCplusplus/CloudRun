@@ -173,6 +173,16 @@ By default, a Cloud Run application will have a concurrency value of 80, meaning
 
 from step 4
 
+> Modify code of website, and deploy it again 
+
+prework, 
+
+      cd ~/monolith-to-microservices/react-app/src/pages/Home
+      
+      mv index.js.new index.js
+      
+      cat ~/monolith-to-microservices/react-app/src/pages/Home/index.js
+
 
 # GKE
 
