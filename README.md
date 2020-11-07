@@ -55,7 +55,8 @@ from Step 0
 
         
 
-* 1.2, pull it to gcr.io
+* 1.2, push it to gcr.io (a private registry)
+
 
 # Cloud Run
 
