@@ -163,7 +163,7 @@ from step 3
         
 * 3.6, in cloud console, check the result by navigating to Cloud Run > [Service Name] > revsion tab.
 
-    
+    ![](https://raw.githubusercontent.com/QueenieCplusplus/CloudRun/main/cloud%20run%20revsion.png)
         
 * tips & attentions:
 
