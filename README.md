@@ -135,16 +135,25 @@ from step 3
 * 3.2, deploy it to Cloud Run PaaS
 
        gcloud run deploy --image=gcr.io/${GOOGLE_CLOUD_PROJECT}/monolith:1.0.0 --platform managed
-       
+
+* 3.3, mgmt the Deployment
+
        // 1. choose the managed version of Cloud Run by specifying --platform managed.
        
        // 2. specify which region you'd like to run in. Type the number for the region closest to you.
        
        // 3. accept the default suggested service name (it will be "monolith") by pressing Enter.
+       
+* 3.4, check the deployment
 
-* 3.3, mgmt the Deployment
+       gcloud run services list
+       
+       [the pod is running now]
+       
+        SERVICE    REGION    URL       LAST DEPLOYED BY          LAST DEPLOYED AT
+      ✔  monolith  us-east1 <your url>  <your email>             [time]
 
-* 3.4, setup Endpoint for App in Cloud Run
+* 3.5, setup Endpoint for App in Cloud Run
 
 # CI/CD
 
