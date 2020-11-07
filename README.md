@@ -132,7 +132,9 @@ from step 3
 
       gcloud services enable run.googleapis.com
 
-* 3.2, pull it to Cloud Run PaaS
+* 3.2, deploy it to Cloud Run PaaS
+
+       gcloud run deploy --image=gcr.io/${GOOGLE_CLOUD_PROJECT}/monolith:1.0.0 --platform managed
 
 * 3.3, mgmt the Deployment
 
