@@ -35,6 +35,10 @@ from Step 1
 
       cd ~/monolith-to-microservices/monolith
       npm start
+      
+      [output]
+      
+      Monolith listening on port 8080!
 
 * 1.1, use Cloud Build to create docker Image
 
