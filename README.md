@@ -128,11 +128,15 @@ from step 3
 
 > Deploy a Container
 
-* 3.1, pull it to Cloud Run PaaS
+* 3.1, enalbe cloud run service
 
-* 3.2, mgmt the Deployment
+      gcloud services enable run.googleapis.com
 
-* 3.3, setup Endpoint for App in Cloud Run
+* 3.2, pull it to Cloud Run PaaS
+
+* 3.3, mgmt the Deployment
+
+* 3.4, setup Endpoint for App in Cloud Run
 
 # CI/CD
 
