@@ -15,6 +15,8 @@ Cloud Run brings "serverless" development to containers and can be run either on
 
 (4) roll out new version of Website without Downtime (CI/CD)
 
+(5) GKE
+
 -----------
 
 # Nodejs Web Server
@@ -69,6 +71,11 @@ from step 2
 * 2.2, mgmt the Deployment
 
 * 2.3, setup Endpoint for App in Cloud Run
+
+
+# GKE
+
+since the docker image is saved in the private registry, GKE can pull from it to do GKE-style deployment.
 
 # Ref Code
 
